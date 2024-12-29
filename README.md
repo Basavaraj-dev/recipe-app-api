@@ -1,11 +1,4 @@
-# recipe-app-api
-Recipe API Project.
-# dockerhub username
-basavarajmrk
-# dockerhub email
-basava.mrk@gmail.com
-# access token
-dckr_pat_PJhaea2AwThHnoJx2fMI_H5X63Q
+
 # to run 
 docker login -u basavarajmrk
 # configuere Docker
