@@ -9,12 +9,12 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Login to Docker Hub
-      users: dockers/login-action@v1
+      uses: dockers/login-action@v1
       with:
         username: ${{ secrets.DOCKERHUB_USER }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Chekout
+      - name: Checkout
         uses: actions/checkout@v2
       - name: Test
         run: docker-compose run --rm app sh -c "python manage.py test"
